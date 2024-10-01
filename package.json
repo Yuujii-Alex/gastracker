@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "ethers": "^6.13.3"
+  },
+  "dependencies": {
+    "@metamask/providers": "^17.2.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  }
+}
