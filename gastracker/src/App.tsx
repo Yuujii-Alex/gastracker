@@ -70,13 +70,16 @@ function GasTracker(){
     <>
       <h1>Ethereum Gas Fee Tracker</h1>
       <button onClick={connectWallet}>Connect MetaMask</button>
-      <input
-        type="text"
-        value={address}
-        onChange={(e) => setAddress(e.target.value)}
-        placeholder="Enter Ethereum Address"
-      />
-      <button onClick={calculateGasFees}>Calculate Gas Fees</button>
+      <div>
+        <input
+          type="text"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+          placeholder="Enter Ethereum Address"
+        />
+        <button onClick={calculateGasFees}>Calculate</button>
+
+      </div>
 
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {totalGasFees && <h2>Total Gas Fees Paid: {totalGasFees} ETH</h2>}
